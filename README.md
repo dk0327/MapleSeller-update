@@ -2,9 +2,10 @@
 
 楓之谷裝備助手（MapleSeller）線上更新用的發布處。
 
-- 每個版本放在 [Releases](../../releases)，更新檔名稱是 `MapleSeller-v版本-update.zip`。
+- 每個版本的更新檔放在 [`releases`](releases) 資料夾，名稱是 `MapleSeller-v版本-update.zip`。
+- [`latest.json`](latest.json) 記錄最新版：版本、更新檔位置、檔案指紋（sha256）、變更內容。助手讀這個檔案判斷有沒有新版。
 - 更新檔只有程式本體：`MapleSeller.exe`、`visual-assets`、說明檔。不含原始碼，也不含任何角色名稱、截圖或設定。
-- 每個 Release 的說明裡有一行 `sha256: …`，是更新檔的檔案指紋。助手下載後會先核對，對不上就不更新。
+- 助手下載更新檔後會先核對檔案指紋，對不上就不更新。
 
 ## 助手怎麼更新
 
@@ -17,4 +18,4 @@
 
 ## 手動安裝
 
-從 Releases 下載 `MapleSeller-v版本-update.zip`，整個解壓縮到助手的資料夾，覆蓋舊檔即可。
+從 `releases` 資料夾下載 `MapleSeller-v版本-update.zip`，整個解壓縮到助手的資料夾，覆蓋舊檔即可。
